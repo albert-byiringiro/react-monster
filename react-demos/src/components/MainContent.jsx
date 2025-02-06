@@ -31,11 +31,11 @@ export default function MainContent() {
 
   return (
     <main>
-      {usersInfo.map((user, i) => (
-        <ul key={i}>
-          <li>{user.username}</li>
-          <li>{user.email}</li>
-          <li>{user.location}</li>
+      {usersInfo.map(({ username, email, location }) => (
+        <ul key={Math.random()}>
+          <li>{username}</li>
+          <li>{email}</li>
+          <li>{location}</li>
         </ul>
       ))}
     </main>
