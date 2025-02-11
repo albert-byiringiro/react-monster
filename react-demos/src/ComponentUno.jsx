@@ -31,6 +31,7 @@ const Cart = () => {
 export default Cart
 */
 
+/*
 export function Weather({ temperature }) {
     if (temperature < 15) {
         return <p>It's cold outside!</p>
@@ -39,4 +40,14 @@ export function Weather({ temperature }) {
     } else {
         return <p>It's hot outside!</p>
     }
+}
+*/
+
+
+export function UserStatus({ loggedIn, isAdmin }) {
+    if (loggedIn && isAdmin) {
+        return <h2>Welcome Admin</h2>
+    }
+
+    return <h2>Welcome user</h2>
 }

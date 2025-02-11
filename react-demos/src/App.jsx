@@ -1,5 +1,5 @@
-import { Weather } from "./ComponentUno";
+import { UserStatus } from "./ComponentUno";
 
 export default function App() {
-  return <Weather temperature={19} />
+  return <UserStatus loggedIn={true} isAdmin={true} />
 }
