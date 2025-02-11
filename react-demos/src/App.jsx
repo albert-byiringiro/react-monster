@@ -1,6 +1,5 @@
-import Cart from "./conditional-rendering/Password"
+import { Weather } from "./ComponentUno";
 
 export default function App() {
-  // return <Password isValid={false} />
-  return <Cart />
+  return <Weather temperature={19} />
 }
