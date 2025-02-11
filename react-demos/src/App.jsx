@@ -1,5 +1,6 @@
-import Password from "./conditional-rendering/Password";
+import Cart from "./conditional-rendering/Password"
 
 export default function App() {
-  return <Password isValid={false} />
+  // return <Password isValid={false} />
+  return <Cart />
 }
