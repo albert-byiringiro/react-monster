@@ -1,3 +1,4 @@
+import { CiApple } from "react-icons/ci";
 import "./index.css"
 
 /*
@@ -58,6 +59,9 @@ export function UserStatus({ loggedIn, isAdmin }) {
 
 export function StyledCard() {
     return (
-        <div style={{ backgroundColor: "lightblue", padding: "20px", borderRadius: "10px", color: "darkblue" }}></div>
+        <div style={{ backgroundColor: "lightblue", padding: "20px", borderRadius: "10px", color: "darkblue" }}>
+            <h1 style={{ fontSize: "20px" }}><CiApple />           </h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quae dolorem earum? Reprehenderit similique fugit quod minus expedita? Perspiciatis, ducimus. Quis ut animi veniam voluptates fugiat quos quisquam tenetur dolore.</p>
+        </div>
     )
 }
