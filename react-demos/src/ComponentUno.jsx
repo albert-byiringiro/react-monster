@@ -43,10 +43,11 @@ export function Weather({ temperature }) {
 }
 */
 
+const style = { color: "white", backgroundColor: 'teal', padding: "2rem" }
 
 export function UserStatus({ loggedIn, isAdmin }) {
     if (loggedIn && isAdmin) {
-        return <h2 style={{ color: "white", backgroundColor: 'teal', padding: "2rem" }}>Welcome Admin</h2>
+        return <h2 style={style}>Welcome Admin</h2>
     }
 
     return <h2>Welcome user</h2>
