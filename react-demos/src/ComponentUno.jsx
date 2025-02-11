@@ -1,3 +1,5 @@
+import "./index.css"
+
 /*
 const ValidPassword = () => <h1>Valid Password</h1>;
 const InvalidPassword = () => <h1>Invalid Password</h1>;
@@ -43,11 +45,9 @@ export function Weather({ temperature }) {
 }
 */
 
-const style = { color: "white", backgroundColor: 'teal', padding: "2rem" }
-
 export function UserStatus({ loggedIn, isAdmin }) {
     if (loggedIn && isAdmin) {
-        return <h1 style={style}>Welcome Admin</h1>
+        return <h1>Welcome Admin</h1>
     }
 
     return <h1>Welcome user</h1>
