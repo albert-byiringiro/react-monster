@@ -1,5 +1,5 @@
-import { UserStatus } from "./ComponentUno";
+import { StyledCard } from "./ComponentUno";
 
 export default function App() {
-  return <UserStatus loggedIn={true} isAdmin={true} />
+  return <StyledCard />
 }

@@ -45,10 +45,19 @@ export function Weather({ temperature }) {
 }
 */
 
+/*
 export function UserStatus({ loggedIn, isAdmin }) {
     if (loggedIn && isAdmin) {
         return <h1>Welcome Admin</h1>
     }
 
     return <h1>Welcome user</h1>
+}
+*/
+
+
+export function StyledCard() {
+    return (
+        <div style={{ backgroundColor: "lightblue", padding: "20px", borderRadius: "10px", color: "darkblue" }}></div>
+    )
 }
