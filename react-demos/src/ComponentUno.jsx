@@ -57,6 +57,7 @@ export function UserStatus({ loggedIn, isAdmin }) {
 */
 
 
+/*
 export function StyledCard() {
     return (
         <div style={{ backgroundColor: "lightblue", padding: "20px", borderRadius: "10px", color: "darkblue" }}>
@@ -64,4 +65,11 @@ export function StyledCard() {
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quae dolorem earum? Reprehenderit similique fugit quod minus expedita? Perspiciatis, ducimus. Quis ut animi veniam voluptates fugiat quos quisquam tenetur dolore.</p>
         </div>
     )
+}
+
+*/
+
+export function Button() {
+    const handleClick = () => console.log(Math.round(Math.random() * 10));
+    return <button onClick={handleClick}>Click</button>
 }

@@ -1,5 +1,5 @@
-import { StyledCard } from "./ComponentUno";
+import { Button } from "./ComponentUno";
 
 export default function App() {
-  return <StyledCard />
+  return <Button />
 }
