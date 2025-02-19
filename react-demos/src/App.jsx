@@ -2,16 +2,45 @@ import React, { useState } from 'react'
 
 export default function App() {
 
-  const [count, setCount] = useState(0)
+  const [input, setInput] = useState('')
 
-  const incrementCount = () => setCount(count + 1)
-  const decrementCount = () => setCount(count - 1)
+  const [movies, setMovies] = useState([
+    'Spiderman',
+    'batman',
+    'Life is good'
+  ])
+
+  const handleInputChange = (e) => setInput(e.target.value)
+
+  const handleAddMovie = () => {
+    if (input.trim() !== '') {
+      setMovies([...movies, input.trim()])
+      setInput('')
+    }
+  }
+
+  const handleRemoveMovie = (indexToRemove) => {
+    setMovies(movies.filter((_, index) => index !== indexToRemove))
+  }
 
   return (
     <div className="">
-      <h1>App - {count}</h1>
-      <button onClick={incrementCount}>+</button>
-      <button onClick={decrementCount}>-</button>
-    </div>
+      <input type="text" value={input} onChange={handleInputChange} placeholder='Enter movie title' />
+      <button onClick={handleAddMovie} disabled={!input.trim()}>Add Movie</button>
+      {
+        movies.length === 0 ? (
+          <p>No movies in the list</p>
+        ) : (
+          <ul>
+            {movies.map((movie, index) => (
+              <li key={index}>
+                {movie}
+                <button onClick={() => handleRemoveMovie(index)}>Remove</button>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </div >
   )
 }
