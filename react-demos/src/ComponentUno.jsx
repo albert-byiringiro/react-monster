@@ -69,7 +69,10 @@ export function StyledCard() {
 
 */
 
+
+/*
 export function Button() {
     const handleClick = () => console.log(Math.round(Math.random() * 10));
     return <button onClick={handleClick}>Click</button>
 }
+*/ 
